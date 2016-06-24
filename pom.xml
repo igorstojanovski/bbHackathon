@@ -11,6 +11,15 @@
 	<name>hackathon</name>
 	<description>Services for the bb hackathon</description>
 
+	<repositories>
+		<!--other repositories if any-->
+		<repository>
+			<id>project.local</id>
+			<name>project</name>
+			<url>file:${project.basedir}/repo</url>
+		</repository>
+	</repositories>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -53,18 +62,14 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>gcm-server</groupId>
+			<groupId>hackathon</groupId>
 			<artifactId>gcm-server</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/gcm.server.jar</systemPath>
+			<version>1</version>
 		</dependency>
 		<dependency>
-			<groupId>json-simple</groupId>
+			<groupId>hackathon</groupId>
 			<artifactId>json-simple</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/json-simple-1.1.1.jar</systemPath>
+			<version>1</version>
 		</dependency>
 	</dependencies>
 	
