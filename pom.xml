@@ -52,6 +52,20 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>gcm-server</groupId>
+			<artifactId>gcm-server</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/gcm.server.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/json-simple-1.1.1.jar</systemPath>
+		</dependency>
 	</dependencies>
 	
 	<build>
