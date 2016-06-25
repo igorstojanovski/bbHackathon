@@ -32,7 +32,7 @@ public class NotificationController {
         Token token = tokenService.retrieveToken((long) 1);
 
         Sender sender = new Sender("AIzaSyDKCQ7aOEVJ4F5EF9QBRc_F3xDSC8DGC8M");
-        Message message = messageGenerator.generateRandomMessage();
+        Message message = messageGenerator.getMessage(param);
         Result result = sender.send(message, token.getToken(), 3);
 
         return new ResponseEntity<>(result.getMessageId(), HttpStatus.OK);
