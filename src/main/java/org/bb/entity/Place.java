@@ -29,6 +29,10 @@ public class Place {
     public Place() {
     }
 
+    public Place(Long id) {
+        this.id = id;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId() {

@@ -15,6 +15,21 @@ public class Offer {
     private Long discount;
     private String discountId;
 
+    public Offer() {
+    }
+
+    public Offer(Long id, Place place, String name, String description, String imageSrc, Long regularPrice, String currency, Long discount, String discountId) {
+        this.id = id;
+        this.place = place;
+        this.name = name;
+        this.description = description;
+        this.imageSrc = imageSrc;
+        this.regularPrice = regularPrice;
+        this.currency = currency;
+        this.discount = discount;
+        this.discountId = discountId;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId() {
